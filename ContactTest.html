@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!--Only way to remove the deprecated html 4.01 code to body attribute-->  
+</head>
+<body>
+	<header>
+		<div class="hero-image">
+			<img src="img/banner.jpg" width="100%" alt="Doggie Dan&#39;s Veterniary Clinic banner"/>
+			<!--Will fix width element in the CSS class!-->
+		</div>
+	</header>
+
+ 	<nav>        
+        <p><a href="index.html">Home</a> | <a href="puppies.html">Puppies</a> | <a href="olderdogs.html">Older Dogs</a> | <a href="training.html">Training</a> | <a href="coupons.html">Coupons</a> | <a href="news.html">News</a> | <a href="about.html">About Us</a> | <a href="contact.html">Contact Us</a></p>
+    </nav>
+	
+	<hr>
+
+	<h1>Need to contact us?</h1>
+
+	<p style= "font-size: 24px; font-family: Arial, Helvetica, sans-serif;">Are you are thinking of becoming a new patient, or are you an established patient, needing to find answers? Please feel free to contact us anytime. If you need to contact us during office hours or need to send payment in by check, you can find the our address and phone number below.</p>
+
+	<p style= "font-size: 24px; font-family: Arial, Helvetica, sans-serif;">If it is an immediate emergency, after hours, please call our after hours phone number below.</p>
+
+	<address style="font-size: 24px; font-family: Arial, Helvetica, sans-serif;">
+		Doggie Dan's Veterinary Clinic - Pasadena<br>
+		907 N. Wilson Ave.<br>
+		Pasadena, CA. 91104 <br>
+		<br>
+		Mon - Fri: 8:00 AM - 6:00 PM<br>
+		Sat: 9:30 AM - 12:30 PM<br>
+		<br>
+		During office hours: (626) 555-5555<br>
+		After Hours: (626) 555-7777<br>
+		Fax: (626) 555-1111
+	</address>
+
+	<p style= "font-size: 24px; font-family: Arial, Helvetica, sans-serif;">If you need to cancel an appointment after hours, or have a non-emergency medical question about a prescription or treatment, feel free to submit your inquiry via the form below.</p>
+
+	<form action="mailto:doggiedan@email.com">
+		<table>
+			<tr>
+				<td><label for="firstname">First name</label></td>
+				<td><input type="text" name="firstname" id="fn"></td>
+			</tr>
+			<tr>
+				<td><label for="lastname">Last name</label></td>
+				<td><input type="text" id="ln"></td>
+			</tr>
+			<tr>
+				<td><label for="petname">Pet&#39;s name</label></td>
+				<td><input type="text" id="pn"></td>
+			</tr>
+			<tr>
+				<td><label for="gender">Gender</label></td>
+				<td>
+					<label for="male"></label>
+					<input type="radio" id="m" name="gender">male
+					<label for="female"></label>
+					<input type="radio" id="f" name="gender">female
+				</td>
+			</tr>
+			<tr>
+				<td>Phone number</td>
+				<td><input type="tel" id="tel"></td>
+			</tr>
+			<tr>
+				<td>E-mail</td>
+				<td><input type="email" id="email"></td>
+			</tr>
+			<tr>
+				<td>Kind of contact</td>
+				<td>
+					<select>
+						<option value="np">New Patient Information</option>
+						<option value="ca">Cancel Appointment (after hours)</option>
+						<option value="cs">Cost of Services</option>
+						<option value="qm">Questions about medication</option>
+						<option value="qt">Questions about treatments</option>
+						<option value="mq">Any other inquiries</option>
+					</select>
+				</td>
+				</tr>
+				<tr>
+					<td>Comment</td>
+					<td><textarea name="Comment" rows="4" cols="30"></textarea></td> 
+					<td><input type="Submit" value="Send"></td>
+				</tr>
+			</table>
+
+		</form>
+
+
+	</body>
+	</html>
