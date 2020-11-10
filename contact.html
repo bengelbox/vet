@@ -42,38 +42,39 @@
 	<p style= "font-size: 24px; font-family: Arial, Helvetica, sans-serif;">If you need to cancel an appointment after hours, or have a non-emergency medical question about a prescription or treatment, feel free to submit your inquiry via the form below.</p>
 
 	<form action="mailto:doggiedan@email.com">
+		<!--will change WebAIM alert after CSS class-->
 		<table>
 			<tr>
-				<td>First name</td>
-				<td><input type="text" id="fn"></td>
+				<td><label for="firstname">First name</label></td>
+				<td><input id="firstname" type="text" autocomplete="firstname"></td>
 			</tr>
 			<tr>
-				<td>Last name</td>
-				<td><input type="text" id="ln"></td>
+				<td><label for="lastname">Last name</label></td>
+				<td><input id="lastname" type="text" autocomplete="lastname"></td>
 			</tr>
 			<tr>
-				<td>Pet&#39;s name</td>
-				<td><input type="text" id="pn"></td>
+				<td><label for="petname">Pet&#39;s name</label></td>
+				<td><input id="petname" type="text" autocomplete="off"></td>
 			</tr>
 			<tr>
-				<td>Gender</td>
+				<td><label for="petgender">Pet&#39;s Gender</label></td>
 				<td>
-					<input type="radio" id="m" name="gender">male
-					<input type="radio" id="f" name="gender">female
+					<input id="petgender" type="radio" name="male" value="male">male
+					<input id="petgender" type="radio" name="female" value="female">female
 				</td>
 			</tr>
 			<tr>
-				<td>Phone number</td>
-				<td><input type="tel" id="tel"></td>
+				<td><label for="phonenumber">Phone number</label></td>
+				<td><input id="phonenumber" type="number" autocomplete="number"></td>
 			</tr>
 			<tr>
-				<td>E-mail</td>
-				<td><input type="email" id="email"></td>
+				<td><label for="emailaddress">E-mail</label></td>
+				<td><input id="emailaddress" type="text" autocomplete="emailaddress"></td>
 			</tr>
 			<tr>
-				<td>Kind of contact</td>
+				<td><label for="reasonforcontact">Reason for contact</label></td>
 				<td>
-					<select>
+					<select id="reasonforcontact" name="select">
 						<option value="np">New Patient Information</option>
 						<option value="ca">Cancel Appointment (after hours)</option>
 						<option value="cs">Cost of Services</option>
@@ -84,9 +85,9 @@
 				</td>
 				</tr>
 				<tr>
-					<td>Comment</td>
-					<td><textarea name="Comment" rows="4" cols="30"></textarea></td> 
-					<td><input type="Submit" value="Send"></td>
+					<td><label for="message">Message</label></td>
+					<td><textarea id="message" rows="4" cols="30"></textarea></td>
+					<td><input type="submit" name="submit" value="Send Message"></td>
 				</tr>
 			</table>
 
